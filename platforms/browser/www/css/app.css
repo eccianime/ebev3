@@ -1,0 +1,76 @@
+@font-face{
+	font-family: 'Ubuntu Regular';
+	src: url("../fonts/Ubuntu-R.ttf");
+}
+
+*{
+	font-family: "Ubuntu Regular" !important;
+}
+
+.splash{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.splash img{
+	width: 60%;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+
+.ui-header{
+    background-color: rgb(31,139,0);
+    border-color: rgb(31,139,0);
+}
+
+.ui-header:empty, .ui-footer:empty, .ui-header, .ui-footer{
+	min-height: 3em;
+}
+
+.ui-content{
+	background: white;
+}
+
+.ui-footer{
+	background-color: rgb(244,141,40);
+    border-color: rgb(244,141,40);
+}
+
+canvas{
+	height: 30px;
+	width: 100%;
+	margin-bottom: -5px;
+}
+
+.contenido-centrado{
+	text-align: center;
+}
+
+.logo{
+	width: 70%;
+}
+
+.ui-btn{
+	background-color: rgb(90,177,20);
+	color: white;
+	border: none;
+	width: 150px;
+}
+
+.ui-btn-corner-all, 
+.ui-btn.ui-corner-all, 
+.ui-slider-track.ui-corner-all, 
+.ui-flipswitch.ui-corner-all, 
+.ui-li-count {
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ui-content{
+	min-height: 100%;
+}

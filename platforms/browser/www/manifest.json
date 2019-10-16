@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "EBE TRACKING",
+  "short_name": "EBE TRACKING",
+  "version": "com.ebetracking.app",
+  "description": "El proyecto consiste en desarrollar una herramienta que reduzca el uso del papel y genere ahorros en\ncuanto a uso y orden de la información.",
+  "author": "Ing. Jean Paul Iván Rojas Véliz",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}
