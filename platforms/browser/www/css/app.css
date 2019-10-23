@@ -1,10 +1,29 @@
+/*
+
+	COLORES
+	VERDE OSCURO	
+		rgb(31,139,0)
+
+	VERDE CLARO
+		rgb(90,177,20)
+
+	NARANJA
+		rgb(244,141,40)
+
+
+*/
+
 @font-face{
 	font-family: 'Ubuntu Regular';
-	src: url("../fonts/Ubuntu-R.ttf");
+	src: url("../fonts/Roboto-Medium.ttf");
 }
 
 *{
 	font-family: "Ubuntu Regular" !important;
+}
+
+.fa{
+	font-family: "FontAwesome" !important;
 }
 
 .splash{
@@ -12,7 +31,8 @@
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	z-index: 1;
+	z-index: 9999;
+	top: 0px;
 }
 
 .splash img{
@@ -24,41 +44,40 @@
 
 .ui-header{
     background-color: rgb(31,139,0);
-    border-color: rgb(31,139,0);
+}
+
+.ui-footer{
+	background-color: rgb(244,141,40);
 }
 
 .ui-header:empty, .ui-footer:empty, .ui-header, .ui-footer{
 	min-height: 3em;
+	border: none;
 }
 
 .ui-content{
 	background: white;
 }
 
-.ui-footer{
-	background-color: rgb(244,141,40);
-    border-color: rgb(244,141,40);
-}
-
-canvas{
-	height: 30px;
+.img-responsive{
 	width: 100%;
-	margin-bottom: -5px;
 }
 
 .contenido-centrado{
 	text-align: center;
+	padding-top: 20%;
 }
 
 .logo{
 	width: 70%;
 }
 
-.ui-btn{
+.boton-verde {
 	background-color: rgb(90,177,20);
 	color: white;
 	border: none;
-	width: 150px;
+	width: 250px;
+	font-size: 1.3em;
 }
 
 .ui-btn-corner-all, 
@@ -73,4 +92,123 @@ canvas{
 
 .ui-content{
 	min-height: 100%;
+}
+
+#login > .ui-content {
+	margin-top: 2em;
+}
+
+.pngs{
+	background-color: white;
+}
+
+.ui-header .pngs{
+	margin-top: 3em;
+	position: absolute;
+}
+
+.ui-footer .pngs{
+	margin-bottom: 3em;
+}
+
+.sin_mt{
+	margin-top: 0px !important;
+}
+
+.con_mt{
+	margin-top: 3em;
+}
+
+.al50{
+	width: 50%;
+}
+
+.login-box{
+	padding: 0% 10%;
+}
+
+.login-box .ui-input-text input,
+ .login-box .ui-input-search input {
+ 	text-align: center;
+	text-transform: uppercase;
+ }
+
+ .login-box .ui-input-text ,
+ .login-box .ui-input-search {
+ 	border-radius: 30px;
+ }
+
+.login-box .ui-input-text input::placeholder, 
+.login-box .ui-input-search input::placeholder,
+ .login-box textarea.ui-input-text::placeholder {
+	color: rgb(134,134,134);
+	text-align: center;
+}
+
+.ui-input-text, .ui-input-search {
+	border-color: transparent;
+	background-color: rgb(235,235,235);
+}
+
+.ui-shadow-inset{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.img-menu-inf{
+	width: 65%;
+	padding: 10px;
+}
+
+.menu-footer{
+	border-radius: 25px 25px 0px 0px;
+}
+
+.menu-footer .col-xs-4{
+	border-left: 1px solid white;
+}
+
+.titulo-blanco{
+	color: white;
+	text-shadow: none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+input[name=tx_adjunto]{
+	opacity: 0;	
+	max-height: 37.2px;
+}
+
+.label-extra{
+	position: relative;
+	height: 0px;
+	text-align: left;
+	padding-left: 8px;
+	color: rgb(200,200,200);
+}
+
+.label-extra.tx_adjunto{
+	top: -130px;
+}
+
+.label-extra.nu_lat_lng{
+	top: -90px;
+}
+
+.ui-page .ui-footer-fixed.ui-fixed-hidden {
+    position: fixed;
+}
+
+.ui-field-contain{
+	border: none;
+	margin: .5em 0;
+	padding: 0;
+}
+
+.color-black{
+	color: black;
 }

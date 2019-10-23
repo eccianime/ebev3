@@ -11,53 +11,14 @@ function PGcargado(){
 	$.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
 	$.mobile.pageLoadErrorMessageTheme = "b";
 	$.mobile.pageLoadErrorMessageTheme = "b";
-	
+
 	$.support.cors = true;
 	$.mobile.allowCrossDomainPages = true;
 	$.mobile.pushState = false;
 
-	var w = parseInt($("body").css("width").substring(0,3));
-	var coord = {
-		"cabeza": [0.00, 13.13, 22.50, 28.13, 30.00, 28.13, 22.50, 13.13, 0.00 ],
-		"pie": [40.00, 26.88, 17.50, 11.88, 10.00, 11.88, 17.50, 26.88, 40.00 ],
-	};
-
-
-	$("canvas").each(function() {
-		var c = $(this);
-		var clase = $(this).attr("data-soy");
-		var color = clase == "cabeza" ? "rgb(31,139,0)" : "rgb(244,141,40)";
-
-		c.width = w;
-		var ctx = c[0].getContext("2d");
-
-		ctx.beginPath();
-
-		if( clase == "cabeza" ){
-			ctx.moveTo(coord[clase][0],0);
-		}else{
-			ctx.moveTo(0, coord[clase][0]);
-		}
-
-		for (var i = 1, j = .125 ; i < coord[clase].length; i++) {
-			ctx.lineTo((w*j), coord[clase][i]);
-			j+=.125;
-		}
-
-		ctx.closePath();
-
-		ctx.strokeStyle = color;
-		ctx.lineWidth = 10;
-		ctx.lineJoin = "round";
-		ctx.stroke();
-
-		ctx.fillStyle = color;
-		ctx.fill();
-	})
-
-	setTimeout( function () {
+	/*setTimeout( function () {
 		$(".splash").fadeOut(3000);
-	}, 3000);
+	}, 3000);*/
 
 }
 
