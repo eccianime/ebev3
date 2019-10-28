@@ -36,6 +36,9 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.ebev3.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ebetracking.app"
     }
   },
   "dependent_plugins": {

@@ -35,8 +35,8 @@ function CORS ( url, respuesta ) {
 	$('[data-role=page]').append(loading);
 	$.ajax({
 		type: "GET",
-		url: "http://localhost/ebetracking/php/webservice.php"+url,
-		//url: "http://appevt.zz.com.ve/webservice.php"+url,
+		//url: "http://localhost/ebetracking/php/webservice.php"+url,
+		url: "http://appevt.zz.com.ve/webservice.php"+url,
 		dataType: "jsonp",
 		jsonpCallback: respuesta,
 	}).done(function() {
