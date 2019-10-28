@@ -2,6 +2,8 @@ function onBodyLoad() {
 	document.addEventListener("deviceready", PGcargado, false);
 }
 
+var usuario = {};
+
 function PGcargado(){
 
 	$.mobile.defaultPageTransition = 'flip';
@@ -22,18 +24,17 @@ function PGcargado(){
 
 }
 
-function corsinaction () {
-
+function CORS ( url, respuesta ) {
 	$.ajax({
 		type: "GET",
-		url: "http://appevt.zz.com.ve/webservice.php",
+		//url: "http://localhost/ebetracking/php/webservice.php"+url,
+		url: "http://appevt.zz.com.ve/webservice.php"+url,
 		dataType: "jsonp",
-		jsonpCallback: 'respuestaJSONP',
+		jsonpCallback: respuesta,
 	});
 }
 
 function respuestaJSONP (datos) {
-	console.log(datos);
 	$.each(datos,function (i, v) {
 		$("#empieza").append("<br/><span>Índice: "+i+" - Valor: "+v+"</span>");
 	});

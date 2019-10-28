@@ -19,33 +19,27 @@
 	<link rel="apple-touch-icon" href="img/favicon.png">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
-	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/jquery.js"></script>
 	<script src="cordova.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
-
 <body onload="onBodyLoad()">
 	<section data-role="page" id="home" data-theme="c" data-fullscreen=true>
+		<!-- <div class="splash">
+			<img src="img/ebetrackinggif.gif" />
+		</div> -->
 		<div data-role="header" data-position=fixed>
 			<img class="pngs" src="img/cabeza.png" width="100%">
 		</div>
 		
 		<div data-role="content" class="contenido-centrado">
+			<img src="img/saisa.png" class="logo"> 
+			<br/>
 			<a href="tpl/login.html" data-role=button class="ui-btn-inline boton-verde">INICIO DE SESIÓN</a>
-			<a href="tpl/usuario/control.html" data-role=button class="ui-btn-inline boton-verde">CONTROL</a>
-			<a href="tpl/usuario/notas.html" data-role=button class="ui-btn-inline boton-verde">NOTAS</a>
-			<a href="tpl/usuario/perfil.html" data-role=button class="ui-btn-inline boton-verde">PERFIL</a>
-			<a href="tpl/usuario/lista_sucursales.html" data-role=button class="ui-btn-inline boton-verde">SUCURSALES</a>
-			<a href="tpl/usuario/bitacora.html" data-role=button class="ui-btn-inline boton-verde">BITACORA</a>
-			<a href="tpl/usuario/reportes.html" data-role=button class="ui-btn-inline boton-verde">REPORTES</a>
-			<a href="tpl/usuario/asist-visit.html" data-role=button class="ui-btn-inline boton-verde">ASISTENCIA/VISITAS</a>
-			<a href="tpl/usuario/asistencias.html" data-role=button class="ui-btn-inline boton-verde">ASISTENCIAS</a>
-			<a href="tpl/usuario/empleados.html" data-role=button class="ui-btn-inline boton-verde">EMPLEADOS</a>
-			<a href="tpl/usuario/empleados-v2.html" data-role=button class="ui-btn-inline boton-verde">EMPLEADOS V2</a>
-			<a href="tpl/usuario/visitas.html" data-role=button class="ui-btn-inline boton-verde">VISITAS</a>
-
+			<a href="#" data-role=button class="ui-btn-inline boton-verde">SOLICITAR SERVICIO</a>
+			<br/>
 		</div>
 		
 		<div data-role="footer" data-position=fixed>

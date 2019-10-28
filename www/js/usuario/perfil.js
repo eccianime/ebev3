@@ -1,0 +1,1 @@
+$('span[data-nick-perfil]').html(usuario.tx_nombre);
