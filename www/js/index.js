@@ -18,6 +18,12 @@ function PGcargado(){
 	$.mobile.allowCrossDomainPages = true;
 	$.mobile.pushState = false;
 
+	console.log("existo");
+
+	$("#pruebacors").click(function() {
+		CORS( "", "respuestaJSONP" );
+	})
+
 	/*setTimeout( function () {
 		$(".splash").fadeOut(3000);
 	}, 3000);*/
@@ -25,12 +31,16 @@ function PGcargado(){
 }
 
 function CORS ( url, respuesta ) {
+	var loading = "<div class='splash'></div>";
+	$('[data-role=page]').append(loading);
 	$.ajax({
 		type: "GET",
-		//url: "http://localhost/ebetracking/php/webservice.php"+url,
-		url: "http://appevt.zz.com.ve/webservice.php"+url,
+		url: "http://localhost/ebetracking/php/webservice.php"+url,
+		//url: "http://appevt.zz.com.ve/webservice.php"+url,
 		dataType: "jsonp",
 		jsonpCallback: respuesta,
+	}).done(function() {
+		$(".splash").remove();
 	});
 }
 

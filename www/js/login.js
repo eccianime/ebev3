@@ -1,7 +1,7 @@
 function entrar( datos ) {
 
 	if( datos.success == true ){
-		usuario = datos.datos[0][0];
+		usuario = datos.datos[0];
 		switch(usuario.co_rol){
 			case "1": 	$.mobile.changePage("super/perfil.html");	break;
 			case "2": 	$.mobile.changePage("admin/perfil.html");	break;

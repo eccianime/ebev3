@@ -29,7 +29,11 @@
 }
 
 .splash{
+	background-image: url(../img/ebetrackinggif.gif);
 	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
 	height: 100%;
 	width: 100%;
 	position: absolute;

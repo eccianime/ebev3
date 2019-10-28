@@ -2,6 +2,8 @@ function onBodyLoad() {
 	document.addEventListener("deviceready", PGcargado, false);
 }
 
+var usuario = {};
+
 function PGcargado(){
 
 	$.mobile.defaultPageTransition = 'flip';
@@ -16,24 +18,33 @@ function PGcargado(){
 	$.mobile.allowCrossDomainPages = true;
 	$.mobile.pushState = false;
 
+	console.log("existo");
+
+	$("#pruebacors").click(function() {
+		CORS( "", "respuestaJSONP" );
+	})
+
 	/*setTimeout( function () {
 		$(".splash").fadeOut(3000);
 	}, 3000);*/
 
 }
 
-function corsinaction () {
-
+function CORS ( url, respuesta ) {
+	var loading = "<div class='splash'></div>";
+	$('[data-role=page]').append(loading);
 	$.ajax({
 		type: "GET",
-		url: "http://appevt.zz.com.ve/webservice.php",
+		url: "http://localhost/ebetracking/php/webservice.php"+url,
+		//url: "http://appevt.zz.com.ve/webservice.php"+url,
 		dataType: "jsonp",
-		jsonpCallback: 'respuestaJSONP',
+		jsonpCallback: respuesta,
+	}).done(function() {
+		$(".splash").remove();
 	});
 }
 
 function respuestaJSONP (datos) {
-	console.log(datos);
 	$.each(datos,function (i, v) {
 		$("#empieza").append("<br/><span>Índice: "+i+" - Valor: "+v+"</span>");
 	});

@@ -1,6 +1,8 @@
 /*
 
 	COLORES
+	GRIS CLARO
+		rgb(242,242,242)
 	VERDE OSCURO	
 		rgb(31,139,0)
 
@@ -27,7 +29,11 @@
 }
 
 .splash{
+	background-image: url(../img/ebetrackinggif.gif);
 	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -161,6 +167,11 @@
 	padding: 10px;
 }
 
+.fa-menu-inf{
+	padding: 15px;
+	color: white;
+}
+
 .menu-footer{
 	border-radius: 25px 25px 0px 0px;
 }
@@ -199,6 +210,14 @@ input[name=tx_adjunto]{
 	top: -90px;
 }
 
+.label-extra.tx_adjunto-2{
+	top: -85px;
+}
+
+.label-extra.nu_lat_lng-2{
+	top: -45px;
+}
+
 .ui-page .ui-footer-fixed.ui-fixed-hidden {
     position: fixed;
 }
@@ -211,4 +230,49 @@ input[name=tx_adjunto]{
 
 .color-black{
 	color: black;
+}
+
+.ui-listview{
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: rgb(242,242,242);
+}
+
+.ui-listview-inset > .ui-li-static,
+ .ui-listview-inset > .ui-li-divider,
+  .ui-listview-inset > li > a.ui-btn,
+  .ui-listview > li > a.ui-btn  {
+  	border: none;
+  	color: black;
+  	font-size: .7em;
+}
+
+.ui-btn-icon-right::after {
+	background-color: rgb(244,141,40);
+}
+
+.bitacora li:nth-child(2n){
+	background-color: white;
+}
+
+.bitacora.ui-listview > li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input[type=date]{
+	background-color: white;
+	border-bottom: 3px solid rgb(242,242,242);
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-left: 20px;	
+}
+
+.calendario{
+	color: rgb(244,141,40);
+	text-align: left;
+	position: relative;
+	top: -40px;
+	font-size: 20px;
+	max-height: 0px;
 }
