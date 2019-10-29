@@ -18,8 +18,6 @@ function PGcargado(){
 	$.mobile.allowCrossDomainPages = true;
 	$.mobile.pushState = false;
 
-	console.log("existo");
-
 	$("#pruebacors").click(function() {
 		CORS( "", "respuestaJSONP" );
 	})
@@ -35,8 +33,8 @@ function CORS ( url, respuesta ) {
 	/*$('[data-role=page]').append(loading);*/
 	$.ajax({
 		type: "GET",
-		url: "http://localhost/ebetracking/php/webservice.php"+url,
-		//url: "http://appevt.zz.com.ve/webservice.php"+url,
+		//url: "http://localhost/ebetracking/php/webservice.php"+url,
+		url: "http://appevt.zz.com.ve/webservice.php"+url,
 		dataType: "jsonp",
 		jsonpCallback: respuesta,
 	})/*.done(function() {
