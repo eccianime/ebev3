@@ -28,6 +28,14 @@ function PGcargado(){
 
 	setInterval( function () {
 		checkConnection();
+
+		var hg = new Date();
+		var h = hg.getHours();
+		var m = hg.getMinutes();
+		var s = hg.getSeconds();
+
+		$("#hora").html(h+":"+m+":"+s);
+
 	}, 1000 );
 
 }
