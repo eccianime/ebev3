@@ -86,6 +86,10 @@
 	font-size: 1.3em;
 }
 
+.boton-verde:focus {
+	background-color: rgb(50,137,0);
+}
+
 .ui-btn-corner-all, 
 .ui-btn.ui-corner-all, 
 .ui-slider-track.ui-corner-all, 
